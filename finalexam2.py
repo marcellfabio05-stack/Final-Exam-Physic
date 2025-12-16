@@ -162,13 +162,4 @@ fig2.update_layout(
 
 st.plotly_chart(fig2, use_container_width=True)
 
-# ==================================================
-# EXPLANATION
-# ==================================================
-st.markdown("""
-### Notes
-- The PID controller regulates **temperature**
-- The multimeter records **thermistor resistance every 5 seconds**
-- Resistance and temperature plots are derived from the **same experiment**
-- Resistance decreases as temperature increases (NTC behavior)
-""")
+
