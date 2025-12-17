@@ -104,7 +104,7 @@ Kp = st.sidebar.slider("P", 0.0, 100.0, 10.0, 0.5)
 Ki = st.sidebar.slider("I", 0.0, 100.0, 10.0, 0.5)
 Kd = st.sidebar.slider("D", 0.0, 100.0, 10.0, 0.5)
 
-setpoint = st.sidebar.slider("Temperature Setpoint (°C)", 35, 45, 40)
+setpoint = st.sidebar.slider("Temperature Setpoint (°C)", 35, 50, 40)
 
 # ==================================================
 # RUN SIMULATION
@@ -126,7 +126,7 @@ fig1.add_trace(go.Scatter(
 ))
 
 fig1.update_layout(
-    title="RTD Resistance (kΩ) vs Time (s)",
+    title="NTC Resistance (kΩ) vs Time (s)",
     xaxis_title="Time (s)",
     yaxis_title="Resistance (kΩ)",
     template="plotly_white"
@@ -161,5 +161,4 @@ fig2.update_layout(
 )
 
 st.plotly_chart(fig2, use_container_width=True)
-
 
